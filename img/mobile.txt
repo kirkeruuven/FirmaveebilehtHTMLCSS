@@ -1,0 +1,73 @@
+/* navbar */
+#navbar h1 {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+
+/* showcase */
+#showcase {
+  height: 100%;
+}
+
+#showcase .showcase-content {
+  padding: 70px 0 30px 0;
+}
+
+/* info */
+#info {
+  height: 500px;
+}
+
+#info .info-img {
+  display: none;
+}
+
+#info .info-content {
+  float: none;
+  width: 100%;
+}
+
+/* features */
+#features .box {
+  float: none;
+  width: 100%;
+}
+
+/* about */
+#about-info .info-left,
+#about-info .info-right {
+  float: none;
+  width: 100%;
+}
+
+#about-info .info-left h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+/* contact-info */
+#contact-form h1,
+#contact-form p {
+  text-align: center;
+}
+
+/* contact info box */
+#contact-info .box {
+  float: none;
+  width: 100%;
+  border-bottom: #444 dotted 1px;
+}
