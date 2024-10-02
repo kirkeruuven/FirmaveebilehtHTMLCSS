@@ -61,6 +61,11 @@ a {
   color: #fff;
 }
 
+.bg-primary{
+    background: #93cb52;
+    color: #333;
+}
+
 /* navbar */
 #navbar {
   background: #333;
@@ -180,4 +185,9 @@ a {
     display: block;
     width: 60%;
     margin: auto;
+}
+
+/* contact */
+#contact{
+    display: flex;
 }
