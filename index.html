@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fas -->
     <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/088e4b290a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/088e4b290a.js" crossorigin="anonymous"></script>
     <title>Company Web</title>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 58.349451, lng: 26.714695 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16, 
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker ({ 
+          position: uluru, 
+          map: map,
+        });
+      }
+    </script>
   </head>
   <body id="home">
     <!-- navbar -->
@@ -118,33 +132,44 @@
     </section>
     <!-- #contact -->
     <section id="contact">
-        <!-- form -->
-         <div class="p-1 bg-primary contact-form">
-            <h2 class="m-heading">Võta Meiega Ühendust</h2>
-            <p>Täida all olev vorm</p>
-            <form action="#">
-                <div class="form-group">
-                    <label for="name">Nimi</label>
-                    <input type="text" id="name" placeholder="Sisesta oma nimi">
-                </div>
-                <div class="form-group">
-                    <label for="name">Email</label>
-                    <input type="email" id="email" placeholder="Sisesta oma e-mail">
-                </div>
-                <div class="form-group"></div>
-                    <label for="name">Telefon</label>
-                    <input type="phone" id="telefon" placeholder="Sisesta oma telefoni number">
-                </div>
-                <div class="form-group"></div>
-                    <label for="name">Sõnum</label>
-                    <textarea id="message" placeholder="Sisesta oma sõnum">
-                    </textarea>
-                </div>
-                <input type="submit" value="Saada">
-            </form>
-            </div>
+      <!-- form -->
+      <div class="p-1 bg-primary contact-form">
+        <h2 class="m-heading">Võta Meiega Ühendust</h2>
+        <p>Täida all olev vorm</p>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" placeholder="Sisesta oma nimi" />
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Sisesta oma e-mail" />
+          </div>
+          <div class="form-group">
+            <label for="name">Telefon</label>
+            <input
+              type="phone"
+              id="telefon"
+              placeholder="Sisesta oma telefoni number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Sõnum</label>
+            <textarea id="message" placeholder="Sisesta oma sõnum"> </textarea>
+          </div>
+          <input type="submit" value="Saada" class="btn btn-dark" />
+        </form>
+      </div>
+      <!-- map -->
+      <div id="map" class="contact-map"></div>
     </section>
+
     <!-- #footer -->
-    <footer id="footer"></footer>
+    <footer id="footer" class="bg-dark text-center py-1">
+      <p>Kõik õigused on kaitstud &copy;2021</p>
+    </footer>
+    <!-- map script --> 
+     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV2pFInywhL1gYa4uzI4YtsBENL6ddi2A&callback=initMap">
+      </script>
   </body>
 </html>

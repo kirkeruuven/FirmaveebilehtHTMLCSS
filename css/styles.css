@@ -61,9 +61,18 @@ a {
   color: #fff;
 }
 
-.bg-primary{
-    background: #93cb52;
-    color: #333;
+.bg-primary {
+  background: #93cb52;
+  color: #333;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #444;
 }
 
 /* navbar */
@@ -176,18 +185,44 @@ a {
 }
 
 /* clients */
-#clients .items{
-    display: flex;
-    justify-content: center;
+#clients .items {
+  display: flex;
+  justify-content: center;
 }
 
-#clients .items img{
-    display: block;
-    width: 60%;
-    margin: auto;
+#clients .items img {
+  display: block;
+  width: 60%;
+  margin: auto;
 }
 
 /* contact */
-#contact{
-    display: flex;
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .contact-map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+}
+
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+}
+
+#contact .contact-form .form-group input:focus,
+#contact .contact-form .form-group textarea:focus {
+  outline: none;
+  border: #333 solid 1px;
 }
