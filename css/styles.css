@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* TYPOGRAPHY */
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
@@ -15,17 +17,31 @@ a {
   text-decoration: none;
 }
 
-/* page basic style */
-/* text */
-.text-primary {
-  color: #93cb52;
-}
-
 .text-center {
   text-align: center;
 }
 
-/* padding */
+/* COLORS */
+.text-primary {
+  color: #93cb52; /* Primary theme color */
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #333;
+}
+
+/* PADDING */
 .py-1 {
   padding: 1rem 0;
 }
@@ -34,6 +50,7 @@ a {
   padding: 1rem;
 }
 
+/* BUTTON STYLES */
 .btn {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -51,22 +68,6 @@ a {
   background: #7ab436;
 }
 
-/* background */
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background-color: #333;
-  color: #fff;
-}
-
-.bg-primary {
-  background: #93cb52;
-  color: #333;
-}
-
 .btn-dark {
   background: #333;
   color: #fff;
@@ -77,7 +78,7 @@ a {
   background: #444;
 }
 
-/* navbar */
+/* NAVBAR STYLES */
 #navbar {
   background: #333;
   color: #fff;
@@ -106,7 +107,7 @@ a {
   transition: background 0.3s; /* Add transition for hover effect */
 }
 
-/* showcase */
+/* SHOWCASE SECTION STYLES */
 #showcase {
   background: #333 url("../img/showcase.jpg");
   height: 100vh;
@@ -124,6 +125,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* HEADING STYLES */
 .heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
@@ -135,21 +137,20 @@ a {
   margin-bottom: 2rem;
 }
 
-/* LARGE heading */
 .l-heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-/* MEDIUM heading */
 .m-heading {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-/* what */
+/* SECTION STYLES */
+/* WHAT SECTION */
 #what .items {
   display: flex;
 }
@@ -164,7 +165,7 @@ a {
   margin-bottom: 1rem;
 }
 
-/* who */
+/* WHO SECTION */
 #who {
   display: flex;
 }
@@ -187,7 +188,7 @@ a {
   border-bottom: #444 dotted 1px;
 }
 
-/* clients */
+/* CLIENTS SECTION */
 #clients .items {
   display: flex;
   justify-content: center;
@@ -199,7 +200,7 @@ a {
   margin: auto;
 }
 
-/* contact */
+/* CONTACT SECTION */
 #contact {
   display: flex;
 }
