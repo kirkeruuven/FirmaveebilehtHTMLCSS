@@ -70,6 +70,7 @@ a {
 .btn-dark {
   background: #333;
   color: #fff;
+  margin-left: 0.75rem;
 }
 
 .btn-dark:hover {
